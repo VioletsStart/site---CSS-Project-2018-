@@ -1,0 +1,26 @@
+# Site settings
+
+title: Reisebuero Damelstein
+description: Entdecken Sie die Welt! 
+
+email: chvorche@gmail.com
+baseurl: "/reisebuero-damelstein" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+github_username: Violetstart
+
+future: true
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+destination: docs
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - gulpfile.js
+  - docs
+  - node_modules
+  - scss
