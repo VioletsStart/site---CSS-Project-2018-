@@ -1,0 +1,189 @@
+form {
+	animation: shake 0.5s 1 ease-in-out forwards;
+}
+
+fieldset, 
+fieldset legend {
+	border: 2px solid #CCC;
+	border-radius: 0.3em;
+	box-shadow: 0 0 2rem 0 rgba(black, 0.1);
+}
+
+fieldset {
+	background: rgb(233, 194, 88);
+	padding: 3.5vh 4.5vw 3vh 4.5vw;
+}
+
+fieldset legend {
+	display: inline-block;
+	background: rgb(233, 194, 88);
+	padding: 0.6em 2.2em;
+	font-weight: bold;
+}
+
+label {
+	font-weight: bold;
+	display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 20rem;
+	display: block;
+	border: 2px solid #CCC;
+	padding: 0.4em 1em;
+	border-radius: 0.4em;
+	background: rgb(233, 194, 88);
+	outline: none;
+	transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+	background: #FFF;
+	border-color: #333;
+}
+
+input[type="submit"] {
+	display: block;
+	border: 2px solid #000;
+	background: rgb(233, 194, 88);
+	color: #FFF;
+	padding: 0.6em 2.2em;
+	border-radius: 0.4em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background: rgb(233, 194, 88);
+	transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.log-in h2 {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.log-in h2, 
+.log-in p {
+    text-align: center;
+    color: rgb(102, 41, 41);
+}
+
+.log-in h4 {
+    color: rgb(102, 41, 41);
+    margin-top: 2rem;
+}
+
+.log-in div {
+    padding-left: 5rem;
+}
+
+input {
+    width: 220px;
+    background: rgb(245, 247, 147);
+    border-radius: 5rem;
+    padding: 0.9rem 2rem 0.9rem 3.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+}
+.last-input {
+    background: rgb(245, 247, 147);
+    margin: 1rem 0 0 0;
+}
+.last-input::placeholder {
+    color: white;
+    padding-left: 1.4rem;
+}
+.last-input:focus {
+    background: rgb(94, 71, 54);
+    outline: none;
+}
+div.log-in > p {
+    color:rgb(102, 41, 41);
+    font-size: 0.9rem;
+    margin: 1.5rem 0 0 0;
+}
+div.log-in > p > a{
+    color:rgb(102, 41, 41);
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+div.log-in > p:last-of-type {
+    margin-top: 3rem;
+}
+div.log-in > p:last-of-type >i {
+    left: 0.3rem;
+}
+i{
+    position: relative;
+    color: rgb(102, 41, 41);
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: rgb(102, 41, 41);
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: rgb(245, 247, 147);
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: rgb(245, 247, 147);
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: rgb(245, 247, 147);
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    background-color: rgb(245, 247, 147);
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(245, 247, 147);
+  }
