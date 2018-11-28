@@ -21,9 +21,11 @@ fieldset legend {
 	font-weight: bold;
 }
 
-label {
+label,
+.back {
 	font-weight: bold;
-	display: block;
+    display: block;
+    margin: 0;
 }
 
 input[type="text"],
@@ -70,23 +72,23 @@ input[type="submit"]:hover {
     border: 2px solid  rgb(102, 41, 41);
     padding: 0.4em 1em;
 }
-.log-in h2 {
+.login-form h2 {
     margin-top: 1rem;
     margin-bottom: 3rem;
 }
 
-.log-in h2, 
-.log-in p {
+.login-form h2, 
+.login-form p {
     text-align: center;
     color: rgb(102, 41, 41);
 }
 
-.log-in h4 {
+.login-form h4 {
     color: rgb(102, 41, 41);
     margin-top: 2rem;
 }
 
-.log-in div {
+.login-form div {
     padding-left: 5rem;
 }
 
@@ -110,20 +112,20 @@ input {
     background: rgb(94, 71, 54);
     outline: none;
 }
-div.log-in > p {
+div.login-form > p {
     color:rgb(102, 41, 41);
     font-size: 0.9rem;
     margin: 1.5rem 0 0 0;
 }
-div.log-in > p > a{
+div.login-form > p > a{
     color:rgb(102, 41, 41);
     margin-top: 1rem;
     text-decoration: underline;
 }
-div.log-in > p:last-of-type {
+div.login-form > p:last-of-type {
     margin-top: 3rem;
 }
-div.log-in > p:last-of-type >i {
+div.login-form > p:last-of-type >i {
     left: 0.3rem;
 }
 i{

@@ -1,5 +1,5 @@
 body {
-	padding-top: 10rem;  
+	padding-top: 1rem;  
 	background: linear-gradient(to bottom, rgba(rgb(245, 247, 147),1) 60%, rgba(rgb(223, 189, 95),0) 100%); 
 	background-repeat: no-repeat;
 }
@@ -14,7 +14,7 @@ body {
 	}
 }
 
-body.login {
+body.login-form {
 	height: 100vh;
 	overflow: hidden;
 	padding-top: 0;
@@ -34,8 +34,11 @@ body.login {
 			
 		}
 	}
+	.main{
+		margin: 0;
+	}
 }
 .site a{
 	text-decoration: none;
-
+	color: rgb(102, 41, 41);
 }

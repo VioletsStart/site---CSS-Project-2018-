@@ -1,7 +1,7 @@
 $imgItems: (
 	"Angebot der Woche": url("{{site.baseurl}}/imgs/[DSCF7303.JPG]"),
-	"Sonne und Meer": url("{{site.baseurl}}/imgs/[DSCF7303.JPG]"),
-	"Ins Gebirge": url("{{site.baseurl}}/imgs/[DSCF7303.JPG]"),
+	"Sonne und Meer": url("{{site.baseurl}}/imgs/[DSCF7502.JPG]"),
+	"Ins Gebirge": url("{{site.baseurl}}/imgs/[DSCF7436.JPG]"),
 );
 
 .listing {
@@ -39,6 +39,10 @@ $imgItems: (
 			transition: opacity 0.3s ease-in;
 			box-shadow: 0 0 5rem 0.9rem rgba(#000,0.4);
 
+			@each $name, $img in $imgItems {
+				background: $img;	
+				
+			}
 		}
 
 		&:hover {
@@ -53,12 +57,6 @@ $imgItems: (
 		& span {
 			display: block;
 			
-			@each $name, $img in $imgItems {
-				.posts.#{$name} {
-					background: $img;	
-				}
-				
-			}
 		}
 
 		& .title {
