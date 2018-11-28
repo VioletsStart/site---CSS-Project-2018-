@@ -34,6 +34,7 @@ $btnColors: (
 		&:hover {
 		background: lighten($color, 20);
 		color: btn-text-color(lighten($color, 20));
+		border-color: rgb(102, 41, 41);
 		}
 	}
 }

@@ -19,15 +19,15 @@ body {
 }
 
 .site-img{
-	width: 79%;
-	height: 25%;
+	width: 81%;
+	height: 32%;
 	background: url(/imgs/coverimg.jpg) no-repeat; 
 	background-position: center; 
 	background-size: contain cover;
 	background-size: 100% 100%;
 	font-size: 120%;
 	border-radius: 0.4em;
-	box-shadow: 0 0 1.5rem 0.1rem rgba(black, 0.2);
+	box-shadow: 0 0 1.5rem 0.3rem rgba(black, 0.2);
 }
 
 .site-title {
@@ -46,8 +46,9 @@ body {
 
 .site-description {
 	font-style: italic;
+	color: rgb(102, 41, 41);
 	font-weight: bold;
 	font-family: serif;
-	margin: 5rem 0 7rem 0;
+	margin: 4.5rem 0;
 	font-size: 110%;
 }
