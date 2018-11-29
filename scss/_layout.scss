@@ -1,5 +1,5 @@
 body {
-	padding-top: 1rem;  
+	padding-top: 10rem;  
 	background: linear-gradient(to bottom, rgba(rgb(245, 247, 147),1) 60%, rgba(rgb(223, 189, 95),0) 100%); 
 	background-repeat: no-repeat;
 }
@@ -10,7 +10,7 @@ body {
 
 	@at-root #{&}-content {
 		max-width: 60rem;
-		margin: 0 auto;
+		margin: 2rem auto;
 	}
 }
 
@@ -35,7 +35,7 @@ body.login-form {
 		}
 	}
 	.main{
-		margin: 0;
+		margin: 10rem auto;
 	}
 }
 .site a{

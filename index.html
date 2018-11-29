@@ -2,18 +2,14 @@
 layout: site
 ---
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<a href="#" class="button color1"><i class="fas fa-exclamation"></i> Last Minute</a>
-<a href="#" class="button color2"><i class="fas fa-car-side"></i> Mietwagen</a>
-<a href="#" class="button color2"><i class="fas fa-plane-arrival"></i> Flug</a>
-<a href="#" class="button color2"><i class="fas fa-h-square"></i> Hotel</a>
-<a href="#" class="button color2"><i class="fas fa-campground"></i> Ferienwohnung</a>
 
-<ul class="navigation">
-	<li><a class="fas fa-suchen" href="/reisebuero-damelstein/">Suchen & Buchen</a></li>
-	<li><a class="fas fa-bereiche" href="/reisebuero-damelstein/">Reisebereiche</a></li>
-	<li><a class="fas fa-vielfalt" href="/reisebuero-damelstein/">Vielfalt</a></li>
-	<li><a class="fas fa-meine-reisebuero" href="/reisebuero-damelstein/">Meine Reisebuero</a></li>
-</ul>
+<div class="buttons">
+	<a href="{{ site.baseurl }}/lastminute/" class="button color1"><i class="fas fa-exclamation"></i> Last Minute</a>
+	<a href="{{ site.baseurl }}/mietwagen/" class="button color2"><i class="fas fa-car-side"></i> Mietwagen</a>
+	<a href="{{ site.baseurl }}/flug/" class="button color2"><i class="fas fa-plane-arrival"></i> Flug</a>
+	<a href="{{ site.baseurl }}/hotel/" class="button color2"><i class="fas fa-h-square"></i> Hotel</a>
+	<a href="{{ site.baseurl }}/ferienwohnung/" class="button color2"><i class="fas fa-campground"></i> Ferienwohnung</a>
+</div>
 
 <ul class="listing posts">
 	{% for post in site.posts %}

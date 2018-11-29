@@ -47,7 +47,8 @@ $imgItems: (
 
 		&:hover {
 			background: rgb(245, 247, 147);
-			color: #000;
+			font-weight: bold;
+			font-style: italic;
 			
 			&:before {
 				opacity: 1;
