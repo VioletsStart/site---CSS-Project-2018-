@@ -1,4 +1,5 @@
 :root {
+	--font-size-footer:	10px;
 	--font-size-initial: 12px;
 	--font-size-lv2: 14px;
 	--font-size-lv3: 16px;
@@ -6,5 +7,8 @@
 
 	--spacing-site: 3rem;
 
+	--color-background: rgb(245, 247, 147);
+	--color-decoration-main: rgb(250, 203, 74);
 	--color-text-main: rgb(102, 41, 41);
+	--color-shadow: rgba(0,0,0,0.5);
 }

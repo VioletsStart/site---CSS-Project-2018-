@@ -1,4 +1,29 @@
 .site-footer {
+    
+    margin: 10rem 7rem 0 7rem;
+    font-size: var(--font-size-footer, 10px);
 
+    section{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    li {
+        padding-left: 0.2rem;
+        display: inline-block;
+        margin-right: 2rem;
+    }
+    
+    hr {
+        border: 0.5px solid var(--color-decoration-main);
+        width: 100%;
+    }
+    
+    p:last-child {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    
 }
 

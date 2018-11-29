@@ -24,11 +24,11 @@
 		display: block;
 		padding: 1.5em 2.5em;
 		font-size: 1.5em;
-		background: rgb(245, 247, 147);
+		background: var(--color-background);
 		text-decoration: none;
-		color:rgb(102, 41, 41);
+		color:var(--color-text-main);
 		border-radius: 0.5rem;
-		box-shadow: 0 0 1.5rem 0.1rem rgba(#000,0.1);
+		box-shadow: 0 0 1.5rem 0.1rem var(--color-shadow);
 	}
 
 	a:before {

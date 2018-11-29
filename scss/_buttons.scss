@@ -6,7 +6,7 @@ $btnColors: (
 
 @function btn-text-color($bgColor) {
 	@if (lightness($bgColor) > 50) {
-		@return rgb(102, 41, 41); 
+		@return var(--color-text-main); 
 	} @else {
 		@return #fff; 
 	}
@@ -20,10 +20,10 @@ $btnColors: (
 	padding: 1em 1.5em;
 	border-radius: 0.4em;
 	font-weight: bold;
-	background-color:rgb(245, 247, 147);
+	background-color: var(--color-background);
 	text-decoration: none;
 	border: 2px solid #FFF;
-	color: rgb(102, 41, 41);
+	color: var(--color-text-main);
 	transition: background 0.3s ease-in, color 0.3s ease-in;
 	box-shadow: 0 0 1.5rem 0.2rem rgba(black, 0.2);	
 }
@@ -37,8 +37,8 @@ $btnColors: (
 		&:hover {
 		background: lighten($color, 20);
 		color: btn-text-color(lighten($color, 20));
-		border-color: rgb(102, 41, 41);
-		box-shadow: 0 0 1.8rem 0.4rem rgba(black, 0.2);	
+		border-color: var(--color-text-main);
+		box-shadow: 0 0 1.8rem 0.4rem var(--color-shadow);	
 		font-style: italic;
 		}
 	}

@@ -6,7 +6,7 @@ $imgItems: (
 
 .listing {
 	padding: 0;
-	margin-top: 5rem;
+	margin-top: 4rem;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -22,12 +22,12 @@ $imgItems: (
 	a {
 		display: block;
 		border-radius: 0.3em;
-		color: rgb(102, 41, 41);
+		color: var(--color-text-main);
 		text-decoration: none;
 		padding: 1rem 1.5rem;
 		position: relative;
 		transition: background 0.3s ease-in, color 0.3s ease-in;
-		box-shadow: 0 0 1rem 0 rgba(#000,0.2);
+		box-shadow: 0 0 1rem 0 var(--color-shadow);
 		
 		&:before {
 			display: block;
@@ -37,7 +37,7 @@ $imgItems: (
 			top: 0; left: 0; right: 0; bottom: 0;
 			opacity: 0;
 			transition: opacity 0.3s ease-in;
-			box-shadow: 0 0 5rem 0.9rem rgba(#000,0.4);
+			box-shadow: 0 0 5rem 0.9rem var(--color-shadow);
 
 			@each $name, $img in $imgItems {
 				background: $img;	
@@ -46,7 +46,7 @@ $imgItems: (
 		}
 
 		&:hover {
-			background: rgb(245, 247, 147);
+			background: var(--color-background);
 			font-weight: bold;
 			font-style: italic;
 			
