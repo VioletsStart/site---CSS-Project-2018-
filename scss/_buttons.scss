@@ -12,13 +12,27 @@ $btnColors: (
 	}
 }
 .buttons{
-	display: flex;
-	justify-content: space-evenly;
-	padding-top: 1rem;
+	padding-top: 0;
+	
+	@media only screen and (min-width: 960px){
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		width: 100%;
+		padding-top: 5rem;
+	}	
+
+	@media only screen and (min-width: 1024px){
+		padding-top: 1rem;
+	}
 }
+
 .button {
+	display: block;
+	max-width: 55%;
 	padding: 1em 1.5em;
 	border-radius: 0.4em;
+	margin-bottom: 1rem;
 	font-weight: bold;
 	background-color: var(--color-background);
 	text-decoration: none;
@@ -26,6 +40,12 @@ $btnColors: (
 	color: var(--color-text-main);
 	transition: background 0.3s ease-in, color 0.3s ease-in;
 	box-shadow: 0 0 1.5rem 0.2rem rgba(black, 0.2);	
+	
+	@media only screen and (min-width: 960px){
+		display: inline-block;	
+		margin-bottom: 1.5rem;
+		text-justify: auto;
+	}
 }
 
 

@@ -21,7 +21,7 @@ $breakpoints: (
 
 		@media only screen and (#{$type}-width: $width) {
 			@at-root #{$parent} {
-				@content;
+				@content;	
 			}
 		}
 	}
