@@ -1,0 +1,103 @@
+$imgItems: (
+	"Angebot der Woche": url("/{{site.baseurl}}/imgs/[DSCF7303.JPG]"),
+	"Sonne und Meer": url("/{{site.baseurl}}/imgs/[DSCF7502.JPG]"),
+	"Ins Gebirge": url("/{{site.baseurl}}/imgs/DSCF7436.JPG"),
+);
+
+.listing {
+	padding: 0;
+	margin-top: 2rem;
+	margin-bottom: 10rem;
+
+	@media only screen and (min-width: 960px){
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+
+	li {height: 1rem;
+		list-style: none outside;
+		display: inline-block;
+		width: 30%;
+		
+
+		@media only screen and (min-width: 960px){
+			flex: 0 0 30%;
+			width: 100%;
+			height: 2rem;
+		}
+	}
+
+	a {	
+		display: block;
+		border-radius: 0.3em;
+		color: var(--color-text-main);
+		text-decoration: none;
+		padding: 1rem 1.5rem;
+		position: relative;
+		transition: background 0.3s ease-in, color 0.3s ease-in;
+		box-shadow: 0 0 1rem 0 var(--color-shadow);
+		
+		@media only screen and (min-width: 960px){
+			max-width: 100%;
+			display: block;
+		}
+
+		&:before {
+			display: block;
+			content: '';
+			border-radius: 0.3em;
+			position: absolute;
+			top: 0; left: 0; right: 0; bottom: 0;
+			opacity: 0;
+			transition: opacity 0.3s ease-in;
+			box-shadow: 0 0 5rem 0.9rem var(--color-shadow);
+
+			@each $name, $img in $imgItems {
+				background: $img;	
+				
+			}
+		}
+
+		&:hover {
+			background: var(--color-background);
+			font-weight: bold;
+			font-style: italic;
+			
+			&:before {
+				opacity: 1;
+			}
+		}
+
+		& span {
+			display: block;
+			
+			@each $name, $img in $imgItems {
+				.posts.#{$name} {
+					background: $img;	
+				}
+				
+			}
+		}
+
+		& .title {
+
+			font-weight: normal;
+			font-size: 0.8rem;
+			padding-bottom: 1.5rem;
+
+			@media only screen and (min-width: 480px){
+				font-weight: bold;
+				font-size: 1rem;
+				padding-bottom: 2rem;
+			}
+		
+			@media only screen and (min-width: 960px){
+				font-weight: bold;
+				font-size: 1.2rem;
+				padding-bottom: 4rem;
+			}
+		}
+	}
+}

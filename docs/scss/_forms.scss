@@ -1,0 +1,203 @@
+form {
+	animation: shake 0.5s 1 ease-in-out forwards;
+}
+
+fieldset, 
+fieldset legend {
+	border: 2px solid var(--color-text-main);
+	border-radius: 0.3em;
+	box-shadow: 0 0 2rem 0 var(--color-shadow);
+}
+
+fieldset {
+	background: var(--color-background);
+	padding: 3.5vh 4.5vw 3vh 4.5vw;
+}
+
+fieldset legend {
+	display: inline-block;
+	background: var(--color-background);
+	padding: 0.6em 2.2em;
+	font-weight: bold;
+}
+
+label,
+.back {
+	font-weight: bold;
+    display: block;
+    margin: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 20rem;
+	display: block;
+	border: 2px solid var(--color-text-main);
+	padding: 0.4em 1em;
+	border-radius: 0.4em;
+	background:var(--color-background);
+	outline: none;
+	transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+	background: var(--color-decoration-main);
+    border-color: var(--color-shadow);
+    border: 2px solid #FFF;
+}
+
+input[type="submit"] {
+	display: block;
+	border: 2px solid  var(--color-text-main);
+	background: var(--color-background);
+	color: #FFF;
+	padding: 0.6em 2.2em;
+	border-radius: 0.4em;
+	font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: var(--color-decoration-main);
+    border-collapse: collapse;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    border-color: var(--color-shadow);
+}
+
+#message{
+    width: 20rem;
+    border-radius: 0.4em;
+    border: 2px solid  var(--color-text-main);
+    padding: 0.4em 1em;
+}
+.login-form h2 {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.login-form h2, 
+.login-form p {
+    text-align: center;
+    color: var(--color-text-main);
+}
+
+.login-form h4 {
+    color: var(--color-text-main);
+    margin-top: 2rem;
+}
+
+.login-form div {
+    padding-left: 5rem;
+}
+
+input {
+    width: 150px;
+    background: var(--color-background);
+    border-radius: 5rem;
+    padding: 0.9rem 2rem 0.9rem 3.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+}
+.last-input {
+    background: var(--color-background);
+    margin: 1rem 0 0 0;
+}
+.last-input::placeholder {
+    color: white;
+    padding-left: 1.4rem;
+}
+.last-input:focus {
+    background: var(--color-decoration-main);
+    outline: none;
+}
+div.login-form > p {
+    color:var(--color-text-main);
+    font-size: 0.9rem;
+    margin: 1.5rem 0 0 0;
+}
+div.login-form > p > a{
+    color:var(--color-text-main);
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+div.login-form > p:last-of-type {
+    margin-top: 3rem;
+}
+div.login-form > p:last-of-type >i {
+    left: 0.3rem;
+}
+i{
+    position: relative;
+    color: var(--color-text-main);
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: var(--color-text-main);
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: var(--color-background);
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: var(--color-background);
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: var(--color-background);
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    background-color: var(--color-background);
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-background);
+  }
+  
